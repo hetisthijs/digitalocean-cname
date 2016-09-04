@@ -10,7 +10,7 @@ def createRecord(value):
 
 def main():
     creation = createRecord(sys.argv[1])
-    if creation.status_code == 200:
+    if creation.status_code == 201:
         print "Record added!"
     else:
         print "Adding failed."
